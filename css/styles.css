@@ -1,0 +1,248 @@
+body {
+  color: #333333;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 14px;
+  line-height: 1.42857;
+  overflow: hidden;
+}
+#cloud {
+  animation-duration: 30s;
+  animation-iteration-count: infinite;
+  animation-name: skyani;
+  animation-play-state: running;
+  animation-timing-function:linear;
+  left: -400px;
+  position: absolute;
+  top: 68px;
+  width: 300px;
+  z-index: 5;
+}
+#cloud_one {
+  animation-duration: 90s;
+  animation-iteration-count: infinite;
+  animation-name: skyani;
+  animation-play-state: running;
+  animation-timing-function: linear;
+  left: -400px;
+  position: absolute;
+  top: 68px;
+  width: 300px;
+  z-index: 5;
+}
+#cloud_two {
+  animation-duration: 50s;
+  animation-iteration-count: infinite;
+  animation-name: skyani;
+  animation-play-state: running;
+  animation-timing-function: linear;
+  left: -400px;
+  position: absolute;
+  top: 68px;
+  width: 300px;
+  z-index: 5;
+}
+#cloud_three {
+  animation-duration: 100s;
+  animation-iteration-count: infinite;
+  animation-name: skyani;
+  animation-play-state: running;
+  animation-timing-function: linear;
+  left: -400px;
+  position: absolute;
+  top: 68px;
+  width: 300px;
+  z-index: 5;
+}
+.sky {
+  background: #add8e6 none repeat scroll 0 0;
+}
+#semic {
+  animation-duration: 180s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+  animation-name: skyani;
+  animation-play-state: running;
+  animation-timing-function: linear;
+  left: -305px;
+  padding: 86px 0;
+  position: relative;
+  width: 300px;
+}
+
+@keyframes skyani{
+	0%{
+		transform:translateX(0px);
+	}
+
+	100%{
+		transform:translateX(2700px); 
+	}
+}
+
+.land {
+  background: #add8e6 url("../img/forest-hi.png") repeat scroll 0 0 / contain ;
+  height: 300px;
+  animation-duration: 5s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+  animation-name: landTree;
+  animation-play-state: running;
+  animation-timing-function: ease-in-out;
+
+}
+@keyframes landTree {
+  0% {
+    transform: skewX(0deg);
+  }
+  50% {
+    transform: skewX(3deg);
+  }
+  100% {
+    transform: skewX(0deg);
+  }
+}
+.land > img {
+  animation-duration: 10s;
+  animation-name: tree;
+  height: 242px;
+  bottom: 200px ;
+  position: relative;
+
+}
+
+@keyframes tree{
+  0%{
+    transform:translateY(-15px);
+  }
+
+  100%{
+    transform:skewY(200px); 
+  }
+}
+.road {
+  background: #808080 none repeat scroll 0 0;
+  height: 290px;
+}
+#pngm {
+  animation-duration: 40s;
+  animation-iteration-count: infinite;
+  animation-name: drive;
+  animation-play-state: running;
+  animation-timing-function: linear;
+  bottom: 250px;
+  height: 156px;
+  left: -355px;
+  position: absolute;
+}
+#jeep{
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
+  animation-name: drive;
+  animation-play-state: running;
+  animation-timing-function: linear;
+  bottom: 50px;
+  height: 156px;
+  left: -355px;
+  position: absolute;
+  animation-direction:reverse;
+  z-index:3;
+}
+
+#volvo {
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
+  animation-name: drive;
+  animation-play-state: running;
+  animation-timing-function: linear;
+  bottom: 160px;
+  height: 156px;
+  left: -355px;
+  position: absolute;
+  z-index:2;
+}
+#bike {
+  animation-duration: 40s;
+  animation-iteration-count: infinite;
+  animation-name: family;
+  animation-play-state: running;
+  animation-timing-function: linear;
+  height: 226px;
+  position: absolute;
+  right: -516px;
+  z-index: 5;
+  bottom: 25px;
+}
+
+@keyframes drive{
+	0%{
+		transform:translateX(0px);
+	}
+
+	100%{
+		transform:translateX(2400px); 
+	}
+}
+
+@keyframes family{
+	0%{
+		transform:translateX(0px);
+	}
+
+	100%{
+		transform:translateX(-2500px); 
+	}
+}
+.lines {
+  border: 5px dashed #cccccc;
+  box-sizing: border-box;
+  height: 0;
+  position: relative;
+  top: 50%;
+}
+
+#plane {
+  animation-duration: 15s;
+  animation-name: plan;
+  left: -550px;
+  position: relative;
+  top: -300px;
+  width: 521px;
+  z-index: 7777;
+  animation-iteration-count:infinite;
+  animation-fill-mode:both;
+  animation-timing-function:linear;
+}
+
+
+@keyframes plan{
+  0%{
+    transform:translateX(-200px); 
+  }
+  100%{
+    transform:translateX(2700px) 
+  }
+}
+
+#bird{
+	animation-name:bird;
+	animation-duration:30s;
+	position:absolute;
+	z-index:0;
+	bottom:130px;
+	animation-direction:reverse;
+	animation-fill-mode:both;
+	animation-iteration-count:infinite;
+	left:0px;
+	animation-timing-function:linear;
+	
+}
+
+
+@keyframes bird{
+	0%{
+		transform:translateX(-300px); 
+	}
+	100%{
+		transform:translateX(2700px) 
+	}
+}
